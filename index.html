@@ -1,0 +1,72 @@
+<!-- 2. Using Bootstrap, recreate your portfolio site with the following items: 
+
+   * A navbar
+
+   * A responsive layout (remember the grid, rows and columns are your friends)
+
+     * eg. On `xs` and `sm` screens, each section should take up the entire grid. On `m` and larger screens, each section should take up 2/3 of the grid and the sidebar should take up 1/3 of the grid
+
+   * Responsive images
+
+3. Your Bootstrap solution should minimize use of media queries.
+
+4. Deploy your new Bootstrap-powered portfolio to GitHub Pages.
+
+**BONUS**
+   Using Bootstrap, make a sticky footer and use sub-rows and sub-solumns on your portfolio site _(Hint: Check out the Bootstrap documentation)_-->
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>About | Katie Burrows Bootstrap Example</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+<body>
+	
+	<header id="masthead">
+		
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Katie Burrows</a>
+    </div>
+    <ul class="nav navbar-nav">
+    	<li class="active"><a href="#">Home</a></li>
+    	<li><a href="index.html">About</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>	
+  	</nav>
+	</header>
+
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>About Me</h1>
+				<img src="assets/images/auth-img.jpg" class="auth-img" alt="Katie Burrows">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore soluta iusto neque voluptatem molestiae quaerat, fuga sapiente vel beatae quibusdam iure aliquid quod nihil sunt velit commodi magnam minus est!</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quasi non optio laudantium qui facere, vitae deserunt. Non sed nihil nulla, consequuntur, odit quam eos adipisci odio blanditiis, error fuga.</p>
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+					<a href="#"><img src="assets/images/github-icon.png" class="social" alt="GitHub"></a>
+          			<a href="#"><img src="assets/images/linkedin-icon.png" class="social" alt="LinkedIn"></a>
+          			<a href="#"><img src="assets/images/stackoverflow-icon.png" class="social" alt="Stack Overflow"></a>
+			</div>
+		</section>
+	</div>
+				
+	<footer>
+		<div class="container">Copyright &copy; 2017 Katie Burrows</div>
+	</footer>
+</body>
+</html>
